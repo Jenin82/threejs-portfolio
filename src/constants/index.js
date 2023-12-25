@@ -8,13 +8,13 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    supabase,
     tailwind,
-    nodejs,
-    mongodb,
+    nextjs,
+    python,
     git,
     figma,
-    docker,
+    django,
     mulogo,
     carrent,
     jobit,
@@ -78,20 +78,20 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "Django",
+        icon: django,
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
+        name: "Next.js",
+        icon: nextjs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "Supabase",
+        icon: supabase,
     },
     {
         name: "Three JS",
@@ -106,8 +106,8 @@ const technologies = [
         icon: figma,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "Python",
+        icon: python,
     },
 ];
 
