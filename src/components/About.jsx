@@ -38,14 +38,18 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
     return (
         <>
-            <motion.div variants={textVariant()}>
+            <motion.div variants={textVariant()} className="hidden md:block">
                 <p className={styles.sectionSubText}>Introduction</p>
                 <h2 className={styles.sectionHeadText}>Overview.</h2>
             </motion.div>
+            <div className="block md:hidden">
+                <p className={styles.sectionSubText}>Introduction</p>
+                <h2 className={styles.sectionHeadText}>Overview.</h2>
+            </div>
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
-                className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
+                className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] hidden md:block"
             >
                 I'm a skilled web application developer with experience in
                 TypeScript, JavaScript and Python, and expertise in frameworks
@@ -55,6 +59,18 @@ const About = () => {
                 real-world problems. Let's work together to bring your ideas to
                 life!
             </motion.p>
+            <p
+                variants={fadeIn("", "", 0.1, 1)}
+                className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] block md:hidden"
+            >
+                I'm a skilled web application developer with experience in
+                TypeScript, JavaScript and Python, and expertise in frameworks
+                like React, Next.js, and Django. I'm a quick learner and
+                collaborate closely with my team and clients to create
+                efficient, scalable, and user-friendly solutions that solve
+                real-world problems. Let's work together to bring your ideas to
+                life!
+            </p>
 
             <div className="mt-20 flex flex-wrap gap-10">
                 {services.map((service, index) => (

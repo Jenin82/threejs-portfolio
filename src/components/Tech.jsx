@@ -10,11 +10,20 @@ const Tech = () => {
     return (
         <>
             <motion.div variants={textVariant()} className="mb-10 text-center">
-                <p className={styles.sectionSubText}>LANGUAGES | FRAMEWORKS | TOOLS</p>
+                <p className={styles.sectionSubText}>
+                    LANGUAGES | FRAMEWORKS | TOOLS
+                </p>
                 <h2 className={styles.sectionHeadText}>Tools Used</h2>
             </motion.div>
-            <div className="flex flex-row flex-wrap justify-center gap-10">
+            <div className="hidden md:flex flex-row flex-wrap justify-center gap-10">
                 {technologies.map((technology) => (
+                    <div className="w-28 h-28" key={technology.name}>
+                        <BallCanvas icon={technology.icon} />
+                    </div>
+                ))}
+            </div>
+            <div className="flex flex-row flex-wrap justify-center gap-10 md:hidden">
+                {technologies.slice(0, 6).map((technology) => (
                     <div className="w-28 h-28" key={technology.name}>
                         <BallCanvas icon={technology.icon} />
                     </div>
