@@ -19,14 +19,23 @@ const Hero = () => {
                         Hi, I'm <span className="text-[#915EFF]">Jenin</span>
                     </h1>
                     <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                        I develop full-stack{" "}
-                        <br className="sm:block hidden" />
+                        I develop full-stack <br className="sm:block hidden" />
                         web applications
+						<span className="text-sm md:hidden block text-secondary mt-5">
+							Use desktop website for best experience
+						</span>
                     </p>
                 </div>
             </div>
 
-            {/* <ComputersCanvas /> */}
+            <ComputersCanvas />
+            <div className="md:hidden absolute xs:bottom-30 bottom-64 w-full flex justify-center items-center">
+                <img
+                    src="https://ekare.ai/wp-content/uploads/2019/12/API-1.png"
+                    alt=""
+					className="w-[80%]"
+                />
+            </div>
 
             <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
                 <a href="#about">
