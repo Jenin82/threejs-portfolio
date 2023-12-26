@@ -23,9 +23,19 @@ import threejs from "./tech/threejs.svg";
 
 import mulogo from "./company/µ.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import park from "./park.png";
+import space from "./space.png";
+import iedc from "./iedc.png";
+import threeportfolio from "./threeportfolio.png";
+import campus from "./campus.png";
+import maze from "./maze.png";
+import careerio from "./careerio.png";
+import eachpays from "./eachpays.png";
+import chrome from "./chrome.png";
+import sngist from "./sngist.png";
+import todo from "./todo.png";
+import iedcold from "./iedcold.png";
+import portfolio from "./portfolio.png";
 
 export {
     logo,
@@ -50,7 +60,17 @@ export {
     typescript,
     threejs,
     mulogo,
-    carrent,
-    jobit,
-    tripguide,
+    park,
+    space,
+    iedc,
+    threeportfolio,
+    campus,
+	maze,
+	careerio,
+	eachpays,
+	chrome,
+	sngist,
+	todo,
+	iedcold,
+    portfolio,
 };

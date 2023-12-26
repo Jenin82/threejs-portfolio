@@ -1,7 +1,7 @@
 import {
     mobile,
     backend,
-    creator,
+    // creator,
     web,
     javascript,
     typescript,
@@ -16,10 +16,20 @@ import {
     figma,
     django,
     mulogo,
-    carrent,
-    jobit,
-    tripguide,
+    park,
+    space,
+    iedc,
     threejs,
+	threeportfolio,
+	campus,
+	maze,
+	careerio,
+	eachpays,
+	chrome,
+	sngist,
+	todo,
+	iedcold,
+	portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -170,54 +180,62 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Three JS Portfolio",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A portfolio website designed with React and Three.js, featuring interactive 3D elements and animations for a captivating online presence.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "threejs",
                 color: "pink-text-gradient",
             },
+            {
+                name: "javascript",
+                color: "text-[purple]",
+            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: threeportfolio,
+        source_code_link: "https://github.com/Jenin82/threejs-portfolio",
     },
     {
-        name: "Trip Guide",
+        name: "SNGIST IEDC",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A responsive website created with Next.js, Tailwind, and DaisyUI for the Innovation and Entrepreneurship Development Center at SNGIST Group of Institutions.",
         tags: [
             {
                 name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "daisyui",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "text-[purple]",
+            },
+        ],
+        image: iedc,
+        source_code_link: "https://github.com/Jenin82/sngist-iedc",
+    },
+    {
+        name: "Park Plus",
+        description:
+            "Web-based platform that allows users to search, book, and manage car parking from various providers, providing a convenient and efficient solution for parking.",
+        tags: [
+            {
+                name: "react",
                 color: "blue-text-gradient",
             },
             {
@@ -228,9 +246,244 @@ const projects = [
                 name: "css",
                 color: "pink-text-gradient",
             },
+            {
+                name: "typescript",
+                color: "text-[purple]",
+            },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: park,
+        source_code_link: "https://github.com/Jenin82/ParkPlus",
+    },
+    {
+        name: "Space Portfolio",
+        description:
+            "A space-themed portfolio website using Next.js and Tailwind CSS for a unique, cosmic showcase of skills and projects with responsive design and optimal performance.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "framermotion",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: space,
+        source_code_link: "https://github.com/Jenin82/SpacePortfolio",
+    },
+    {
+        name: "EachPays",
+        description:
+            "EachPays is a PWA built with React, Vite, and TypeScript, streamlining group expense management and tracking individual contributions.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "pwa",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "text-[purple]",
+            },
+        ],
+        image: eachpays,
+        source_code_link: "https://github.com/Jenin82/EachPays",
+    },
+    {
+        name: "Careerio",
+        description:
+            "A platform linking students and companies, leveraging the Beckn protocol and OpenAI's API to offer more than just job listings—it's an ecosystem for growth and opportunities.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "beckn",
+                color: "green-text-gradient",
+            },
+            {
+                name: "openai",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "django",
+                color: "text-[purple]",
+            },
+        ],
+        image: careerio,
+        source_code_link: "https://github.com/Jenin82/SkillSpectrum",
+    },
+    {
+        name: "Maze App",
+        description:
+            "A React-based Progressive Web App (PWA) designed for facilitating team collaboration activities and hosting games such as treasure hunts.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "pwa",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "text-[purple]",
+            },
+            {
+                name: "django",
+                color: "text-[grey]",
+            },
+        ],
+        image: maze,
+        source_code_link: "https://github.com/Jenin82/iedc-summit-app",
+    },
+    {
+        name: "Campus Chapters",
+        description:
+            "A no-code website developed for MuLearn Community's Campus Chapters, constructed with React and TypeScript for ease of use and customization.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: campus,
+        source_code_link: "https://github.com/Jenin82/campus-chapter",
+    },
+    {
+        name: "SNGIST Website",
+        description:
+            "A responsive website with a grievance management system created with django, html, css, and bootstrap for SNGIST Group of Institutions.",
+        tags: [
+            {
+                name: "django",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: sngist,
+        source_code_link: "https://github.com/Jenin82/django-web",
+    },
+    {
+        name: "Chrome Extension",
+        description:
+            "A basic Chrome extension developed using HTML, CSS, and JavaScript, It enabling users to save and access website links for future use.",
+        tags: [
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "javascript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: chrome,
+        source_code_link: "https://github.com/Jenin82/cl-web-chromeex",
+    },
+    {
+        name: "Todo Website",
+        description:
+            "A basic TODO website created as a personal project using React, Vite, CSS, and TypeScript, offering functionalities to add, edit, and remove tasks.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "vite",
+                color: "text-[purple]",
+            },
+        ],
+        image: todo,
+        source_code_link:
+            "https://github.com/Jenin82/mulearn-internship-react-vite",
+    },
+    {
+        name: "SNGIST IEDC (old)",
+        description:
+            "A responsive website created with HTML, CSS, and Bootstrap for the Innovation and Entrepreneurship Development Center at SNGIST Group of Institutions.",
+        tags: [
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: iedcold,
+        source_code_link: "https://github.com/Jenin82/IEDC-webpage",
+    },
+    {
+        name: "Portfolio Website",
+        description:
+            "A simple and mobile-friendly portfolio website created with Bootstrap, HTML and CSS, featuring scroll-triggered animations for an interactive user experience.",
+        tags: [
+            {
+                name: "bootstrap",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "animateOnScroll",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: portfolio,
+        source_code_link: "https://github.com/Jenin82/Jenin82.github.io/",
     },
 ];
 
