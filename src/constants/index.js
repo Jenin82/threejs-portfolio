@@ -1,7 +1,7 @@
 import {
     mobile,
     backend,
-    // creator,
+    creator,
     web,
     javascript,
     typescript,
@@ -42,14 +42,25 @@ export const navLinks = [
         title: "Work",
     },
     {
+        id: "projects",
+        title: "Projects",
+    },
+    {
         id: "contact",
         title: "Contact",
     },
 ];
 
+const achievments = [
+    "Ranked 1st in the µLearn community",
+    "Finalist in the Top 100 Coders Challenge",
+    "Ranked within the Top 9,000 on HackerRank",
+    "Participated and Completed Hacktoberfest 2023",
+];
+
 const services = [
     {
-        title: "Web Developer",
+        title: "Front-End Developer",
         icon: web,
     },
     {
@@ -57,13 +68,13 @@ const services = [
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Back-End Developer",
         icon: backend,
     },
-    // {
-    //     title: "Content Creator",
-    //     icon: creator,
-    // },
+    {
+        title: "Hosting and Deployment",
+        icon: creator,
+    },
 ];
 
 const technologies = [
@@ -397,74 +408,6 @@ const projects = [
         source_code_link: "https://github.com/Jenin82/django-web",
     },
     {
-        name: "Chrome Extension",
-        description:
-            "A basic Chrome extension developed using HTML, CSS, and JavaScript, It enabling users to save and access website links for future use.",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: chrome,
-        source_code_link: "https://github.com/Jenin82/cl-web-chromeex",
-    },
-    {
-        name: "Todo Website",
-        description:
-            "A basic TODO website created as a personal project using React, Vite, CSS, and TypeScript, offering functionalities to add, edit, and remove tasks.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "vite",
-                color: "text-[purple]",
-            },
-        ],
-        image: todo,
-        source_code_link:
-            "https://github.com/Jenin82/mulearn-internship-react-vite",
-    },
-    {
-        name: "SNGIST IEDC (old)",
-        description:
-            "A responsive website created with HTML, CSS, and Bootstrap for the Innovation and Entrepreneurship Development Center at SNGIST Group of Institutions.",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: iedcold,
-        source_code_link: "https://github.com/Jenin82/IEDC-webpage",
-    },
-    {
         name: "Portfolio Website",
         description:
             "A simple and mobile-friendly portfolio website created with Bootstrap, HTML and CSS, featuring scroll-triggered animations for an interactive user experience.",
@@ -487,4 +430,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, achievments };

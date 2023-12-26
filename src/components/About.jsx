@@ -3,7 +3,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { achievments, services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -47,12 +47,13 @@ const About = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
             >
-                I'm a skilled web application developer with experience in TypeScript,
-                JavaScript and Python, and expertise in frameworks like React, Next.js,
-                and Django. I'm a quick learner and collaborate closely with
-                my team and clients to create efficient, scalable, and user-friendly
-                solutions that solve real-world problems. Let's work together to
-                bring your ideas to life!
+                I'm a skilled web application developer with experience in
+                TypeScript, JavaScript and Python, and expertise in frameworks
+                like React, Next.js, and Django. I'm a quick learner and
+                collaborate closely with my team and clients to create
+                efficient, scalable, and user-friendly solutions that solve
+                real-world problems. Let's work together to bring your ideas to
+                life!
             </motion.p>
 
             <div className="mt-20 flex flex-wrap gap-10">
@@ -64,6 +65,51 @@ const About = () => {
                     />
                 ))}
             </div>
+
+            <motion.p
+                variants={fadeIn("", "", 0.1, 1)}
+                className="mt-20 text-secondary text-[17px] max-w-7xl leading-[30px]"
+            >
+                <div className="flex flex-wrap lg:gap-48 lg:w-full">
+                    <div>
+                        <h3 className="text-white text-3xl lg:text-5xl font-bold">
+                            Acheivements
+                        </h3>
+                        <ul
+                            className="mt-5 list-disc px-5 text-secondary text-[17px] max-w-4xl
+                        leading-[30px]"
+                        >
+                            {achievments.map((point, index) => (
+                                <li
+                                    key={`experience-point-${index}`}
+                                    // className="text-white-100 text-[14px] pl-1 tracking-wider"
+                                >
+                                    {point}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="mt-10 md:mt-0">
+                        <h3 className="text-white text-3xl lg:text-5xl font-bold">Stats</h3>
+                        <div className="mt-5 grid grid-rows-1 md:grid-flow-col gap-8">
+                            <div className="text-white text-lg lg:text-xl font-bold">
+                                <span className="text-[#915EFF] text-2xl lg:text-4xl">
+                                    15+
+                                </span>
+                                <br />
+                                Projects completed
+                            </div>
+                            <div className="text-white text-lg lg:text-xl font-bold">
+                                <span className="text-[#915EFF] text-2xl lg:text-4xl">
+                                    1+
+                                </span>
+                                <br />
+                                Years of experience
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </motion.p>
         </>
     );
 };
