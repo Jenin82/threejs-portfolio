@@ -103,13 +103,13 @@ const technologies = [
         icon: django,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Next.js",
+		name: "Next.js",
         icon: nextjs,
     },
+	{
+		name: "Tailwind CSS",
+		icon: tailwind,
+	},
     {
         name: "Supabase",
         icon: supabase,
